@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Deepcategorization NLP</title>
+      
+    </head>
+
+ <body>
+
+    <header>
+        <h2>
+          Deepcategorization NLP 
+        </h2>
+    </header>
+    <main>
+        <section>
+            <form class="" onsubmit="return MyClient.handleSubmit(event)">
+                <div class="imgcontainer">
+                    <h2>Put Url of Article you would like to Process</h2>
+                  </div>
+                <div class="container">
+                    <label for="Url"><b>URL: </b></label>
+                <input id="UrlInfo" type="text" name="input" value="" placeholder="URL">
+                <input type="submit" id ="btnSubmit" name="btn" value="submit" onclick="return MyClient.handleSubmit(event)" onsubmit="return MyClient.handleSubmit(event)">
+           </div>
+            </form>
+        </section>
+
+        <section>
+            <div class="container">
+                <strong>Article Processing Results:</strong>
+                </div>
+            <div id="mainOutput">
+            </div>
+                                             
+        </section>
+    </main>
+
+    <footer>
+        <p>This website is a sample of NLP of deepcategorization processing done by DoaaElsayed</p>
+        <div class="copyright"> 
+            copyright 2021, all rights reserved
+        </div>
+
+    </footer>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/sw.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+        }
+       </script>
+</body>
+
+
+</html>
